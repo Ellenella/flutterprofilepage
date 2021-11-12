@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/painting.dart';
 import 'components/card.dart';
-import 'components/images.dart';
+import 'components/image.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,49 +37,49 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('My Profile'),
+        title: Text('My Profile', style: GoogleFonts.roboto()),
       ),
       backgroundColor: const Color(0xffF1F4F8),
-      body:
-          
-          SafeArea(
-            child: Center(
-                child: _buildCard()
-            ),
-          ),
+      body: SafeArea(
+        child: Center(child: _buildCard()),
+      ),
     );
   }
 
   Widget _buildCard() {
-    return
-        ListView(
-          children: <Widget>[
-            const SizedBox(height: 15,),
-            const Images(text: "Team 11", images: "assets/images/group11.jpg", email: "Team11@gmail.com",university: "Sidehustle Internship Experience",),
-            const SizedBox(height: 50),
-            Row(
-              children: [
-                const SizedBox(width: 10),
-                Text("General", style: GoogleFonts.ubuntu(fontSize: 20, color: Colors.blueGrey))
-              ],
-            ),
-            
-            const SizedBox(height: 15,),
-            const Cards(image: Icons.person_add,text: "Edit Profile"),
-            const Cards(image: Icons.badge,text: "Badges"),
-            const Cards( image: Icons.add_circle_outline_rounded,text: "Study Goals"),
-            const Cards(image: Icons.notifications_off_sharp,text: "Focus mode"),
-            const Cards(image: Icons.next_plan_sharp,text: "School Schedule"),
-            const Cards(image: Icons.group_sharp,text: "Invite Friends"),
-          ],
-        );
+    return ListView(
+      children: <Widget>[
+        const SizedBox(
+          height: 5,
+        ),
+        const Images(
+          text: "Team 11",
+          images: "assets/images/group11.jpg",
+          email: "Team11@gmail.com",
+          university: "Sidehustle Internship Experience",
+        ),
+        const SizedBox(height: 10),
+        Row(children: [
+          const SizedBox(width: 15),
+          Text(
+            "General",
+            style: GoogleFonts.roboto(
+                fontSize: 20, fontWeight: FontWeight.bold, color: Colors.grey),
+          ),
+        ]),
+        const SizedBox(
+          height: 10,
+        ),
+        const Cards(image: Icons.person_add, text: "Edit Profile"),
+        const Cards(image: Icons.badge, text: "Badges"),
+        const Cards(
+            image: Icons.add_circle_outline_rounded, text: "Study Goals"),
+        const Cards(image: Icons.notifications_off_sharp, text: "Focus mode"),
+        const Cards(image: Icons.next_plan_sharp, text: "School Schedule"),
+        const Cards(image: Icons.group_sharp, text: "Invite Friends"),
+      ],
+    );
   }
-
 }
-
-
-
-
-
 
 
