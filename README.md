@@ -18,4 +18,4 @@ samples, guidance on mobile development, and a full API reference.
 
 
 Profile page
-![Screen Shot](https://github.com/Ellenella/flutterprofilepage/tree/main/screenshoot/Screenshot page.png ? raw=true)
+![Screen Shot](https://github.com/Ellenella/flutterprofilepage/blob/main/screenshoot/Screenshot page.png)
