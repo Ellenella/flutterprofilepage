@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'components/card.dart';
-import 'components/image.dart';
+import 'components/images.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
