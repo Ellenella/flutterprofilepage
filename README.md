@@ -17,5 +17,6 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 
-Profile page
-![Screen Shot](https://github.com/Ellenella/flutterprofilepage/blob/main/screenshoot/Screenshot page.png)
+#Profile page
+
+![](https://github.com/Ellenella/flutterprofilepage/blob/main/screenshoot/Screenshot%20page.png)
